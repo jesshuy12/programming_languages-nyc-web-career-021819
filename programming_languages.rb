@@ -4,7 +4,7 @@ def reformat_languages(languages)
     value.each do |language, traits|      #iterating 2nd time over value
       
       if new_hash.keys.include?(language)
-        new_hash[language][:style] << key    #pushing key into new_hash if objects in language is                                          present in new_hash 
+        new_hash[language][:style] << key    #pushing key into new_hash if keys in language is                                          present in new_hash 
       elsif
         new_hash[language] = traits
         new_hash[language][:style] = [key]   # creating key/value pairs by pushing key** to [:style].                                       key** becomes the value, within new_hash
